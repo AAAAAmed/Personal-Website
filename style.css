@@ -4,26 +4,26 @@ body{
     margin-right: max(1rem, 50% - 300px);
     
     font-family: "Comic Relief";
-    background-color: rgb(151, 116, 190);
-    color: rgb(73, 40, 110);
+    background-color: rgb(197, 166, 219);
+    color: rgb(68, 40, 91);
 }
 
 h1{
-    font-size: 4rem;
+    font-size: 3.8rem;
     text-align: center;
 
-    color: rgb(73, 40, 110);
+    color: rgb(95, 60, 136);
     text-shadow: 3px 3px rgb(53, 23, 87);
 }
 
 a{
-    color: rgb(25, 81, 201);
-    text-shadow: 1px 1px rgb(13, 46, 117);
+    color: rgb(34, 88, 206);
+    text-shadow: 1px 1px rgb(18, 47, 110);
 }
 
 section, nav{
-    background-color: rgb(133, 101, 170);
-    border: 3px solid rgb(111, 81, 146);
+    background-color: rgb(181, 145, 206);
+    border: 3px solid rgb(130, 101, 163);
     border-radius: 10px;
 
     padding: 0;
@@ -39,4 +39,16 @@ nav a{
 
     margin-left: .3rem;
     margin-right: .3rem;
+}
+
+.title-header{
+    display: inline;
+    position: relative;
+
+    top: 1rem;
+}
+
+#title{
+    text-align: center;
+    height: 8rem;
 }
