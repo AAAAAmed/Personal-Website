@@ -9,7 +9,6 @@ let letters = [
     document.getElementById("title-header-7"),
     document.getElementById("title-header-8")
 ]
-
 function waveTitle(){
     for(i=0;i<8;i++){
         letters[i].style.top = Math.sin(letterTimers[i])+1 + "rem"
@@ -19,4 +18,13 @@ function waveTitle(){
     requestAnimationFrame(waveTitle)
 }
 
+let hue = 0
+function rainbow(){
+    document.documentElement.style.filter = "hue-rotate("+hue+"deg)"
+    hue += 3
+
+    requestAnimationFrame(rainbow)
+}
+
 waveTitle()
+// rainbow()
