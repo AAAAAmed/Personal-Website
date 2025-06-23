@@ -9,6 +9,7 @@ let letters = [
     document.getElementById("title-header-7"),
     document.getElementById("title-header-8")
 ]
+
 function waveTitle(){
     for(i=0;i<8;i++){
         letters[i].style.top = Math.sin(letterTimers[i])+1 + "rem"
