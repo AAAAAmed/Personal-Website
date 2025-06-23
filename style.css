@@ -22,6 +22,12 @@ body{
     }
 }
 
+@media only screen and (max-width: 180px){
+    body{
+        zoom: 30%;
+    }
+}
+
 h1{
     font-size: 3.8rem;
     text-align: center;
