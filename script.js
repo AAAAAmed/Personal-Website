@@ -13,18 +13,18 @@ function readCookie(name) {
 	return null;
 }
 
+// Initialize cookies if the don't exist
 if(readCookie('doRainbow') == null){
     createCookie('doRainbow', 'false')
 }
-
 if(readCookie('hue') == null){
     createCookie('hue', '0')
 }
-
 if(readCookie('letterTimers') == null){
     createCookie('letterTimers', JSON.stringify([7,6,5,4,3,2,1,0]))
 }
 
+// Handles waving the title around
 let letterTimers = JSON.parse(readCookie('letterTimers'))
 let letters = [
     document.getElementById("title-header-1"),
@@ -34,7 +34,9 @@ let letters = [
     document.getElementById("title-header-5"),
     document.getElementById("title-header-6"),
     document.getElementById("title-header-7"),
-    document.getElementById("title-header-8")]
+    document.getElementById("title-header-8")
+]
+
 function waveTitle(){
     const speed = 0.015
     const height = 0.5
@@ -49,22 +51,23 @@ function waveTitle(){
 }
 waveTitle()
 
+// Handles the togglable rainbow effect
 let hue = Number(readCookie('hue'))
 let doRainbow = readCookie('doRainbow') === 'true'
-if(doRainbow){rainbow()}
+if(doRainbow) rainbow()
 function rainbow(){
     const speed = 1.5
-    
     if(doRainbow){
         document.documentElement.style.filter = "hue-rotate("+hue+"deg)"
         hue += speed
-        
+
         createCookie('hue', `${hue}`)
         requestAnimationFrame(rainbow)
     }else{
         document.documentElement.style.filter = "hue-rotate(0deg)"
     }
 }
+
 function toggleRainbow(){
     if(doRainbow){
         createCookie('doRainbow', 'false')
