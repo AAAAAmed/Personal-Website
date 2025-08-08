@@ -80,13 +80,8 @@ nav a, nav span{
     font-weight: bold;
 }
 
-table{
-    border-spacing: 0;
-}
-
-td, th{
-    border: 2px solid rgb(130, 101, 163);
-    padding: 5px;
+hr{
+    color: rgb(130, 101, 163);
 }
 
 .title-header{
@@ -98,6 +93,10 @@ td, th{
 
 .fine-print{
     font-size: 0.65rem;
+}
+
+.margin-bottom-0{
+    margin-bottom: 0;
 }
 
 #title{
