@@ -11,9 +11,12 @@ let letters = [
 ]
 
 function waveTitle(){
+    const speed = 0.015
+    const height = 0.5
+
     for(i=0;i<8;i++){
-        letters[i].style.top = Math.sin(letterTimers[i])+1 + "rem"
-        letterTimers[i] += 0.015
+        letters[i].style.top = (Math.sin(letterTimers[i])+1) * height + "rem"
+        letterTimers[i] += speed
     }
 
     requestAnimationFrame(waveTitle)

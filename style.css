@@ -1,5 +1,5 @@
 body{
-    margin-top: .7rem;
+    margin-top: 0;
     margin-left: max(1rem, 50% - 300px);
     margin-right: max(1rem, 50% - 300px);
     
@@ -36,7 +36,7 @@ h1{
     text-shadow: 3px 3px rgb(53, 23, 87);
 }
 
-h2{
+h2, h3{
     margin-top: 0;
     margin-bottom: .5rem;
 }
@@ -73,9 +73,11 @@ nav{
     padding: 0;
 }
 
-nav a{
+nav a, nav span{
     margin-left: .3rem;
     margin-right: .3rem;
+
+    font-weight: bold;
 }
 
 table{
@@ -87,22 +89,6 @@ td, th{
     padding: 5px;
 }
 
-.top-left{
-    border-top-left-radius: 10px;
-}
-
-.top-right{
-    border-top-right-radius: 10px;
-}
-
-.bottom-left{
-    border-bottom-left-radius: 10px;
-}
-
-.bottom-right{
-    border-bottom-right-radius: 10px;
-}
-
 .title-header{
     display: inline;
     position: relative;
@@ -110,7 +96,15 @@ td, th{
     top: 1rem;
 }
 
+.fine-print{
+    font-size: 0.65rem;
+}
+
 #title{
     text-align: center;
-    height: 8rem;
+    height: 7rem;
+}
+
+#changelog li{
+    margin-bottom: 1rem;
 }
