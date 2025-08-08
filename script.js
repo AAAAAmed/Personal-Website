@@ -37,32 +37,28 @@ let letters = [
     document.getElementById("title-header-8")
 ]
 
-function waveTitle(){
-    const speed = 0.015
+function waveTitle(deltaTime){
+    const speed = 0.0025
     const height = 0.5
 
     for(i=0;i<8;i++){
         letters[i].style.top = (Math.sin(letterTimers[i])+1) * height + "rem"
-        letterTimers[i] += speed
+        letterTimers[i] += speed*deltaTime
     }
 
     createCookie('letterTimers', JSON.stringify(letterTimers))
-    requestAnimationFrame(waveTitle)
 }
-waveTitle()
 
 // Handles the togglable rainbow effect
 let hue = Number(readCookie('hue'))
 let doRainbow = readCookie('doRainbow') === 'true'
-if(doRainbow) rainbow()
-function rainbow(){
-    const speed = 1.5
+function rainbow(deltaTime){
+    const speed = 0.2
     if(doRainbow){
         document.documentElement.style.filter = "hue-rotate("+hue+"deg)"
-        hue += speed
+        hue += speed*deltaTime
 
         createCookie('hue', `${hue}`)
-        requestAnimationFrame(rainbow)
     }else{
         document.documentElement.style.filter = "hue-rotate(0deg)"
     }
@@ -75,6 +71,18 @@ function toggleRainbow(){
     }else{
         createCookie('doRainbow', 'true')
         doRainbow = true
-        rainbow()
     }
 }
+
+let lastTime = performance.now()
+function update(){
+    const currentTime = performance.now()
+    const deltaTime = currentTime - lastTime
+    lastTime = currentTime
+    
+    waveTitle(deltaTime)
+    rainbow(deltaTime)
+
+    requestAnimationFrame(update)
+}
+update()
