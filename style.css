@@ -7,7 +7,13 @@ body{
     background-color: rgb(197, 166, 219);
     color: rgb(68, 40, 91);
 
-    zoom: 150%;
+    zoom: 250%;
+}
+
+@media only screen and (max-width: 3000px){
+    body{
+        zoom: 150%;
+    }
 }
 
 @media only screen and (max-width: 550px){
@@ -104,6 +110,11 @@ hr{
     font-size: 0.65rem;
 }
 
+.fine-link{
+    font-size: 0.85rem;
+    text-shadow: 0.75px 0.75px rgb(18, 47, 110);
+}
+
 .project-date{
     font-size: 0.65rem;
     margin-bottom: 0.5rem;
@@ -111,6 +122,11 @@ hr{
 
 .margin-bottom-0{
     margin-bottom: 0;
+}
+
+.small-margin{
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
 }
 
 #title{
