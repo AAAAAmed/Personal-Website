@@ -36,13 +36,18 @@ h1{
     text-shadow: 3px 3px rgb(53, 23, 87);
 }
 
-h2, h3{
-    margin-top: 0;
-    margin-bottom: .5rem;
+h2{
+    font-size: 2rem;
+    text-align: center;
+
+    color: rgb(95, 60, 136);
+    text-shadow: 2px 2px rgb(53, 23, 87);
 }
 
-h5{
-    margin: 0;
+h3{
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: .5rem;
 }
 
 p{
@@ -80,6 +85,10 @@ nav a, nav span{
     font-weight: bold;
 }
 
+ul{
+    margin: 0.3rem;
+}
+
 hr{
     color: rgb(130, 101, 163);
 }
@@ -95,15 +104,20 @@ hr{
     font-size: 0.65rem;
 }
 
+.project-date{
+    font-size: 0.65rem;
+    margin-bottom: 0.5rem;
+}
+
 .margin-bottom-0{
     margin-bottom: 0;
 }
 
 #title{
     text-align: center;
-    height: 7rem;
+    height: 6.3rem;
 }
 
 #changelog li{
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
