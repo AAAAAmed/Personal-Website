@@ -83,7 +83,6 @@ for(i=0;i<8;i++){
 }
 
 document.body.prepend(header)
-header.append(button)
 header.append(div)
 for(i=0;i<8;i++){
     div.append(h1s[i])
@@ -91,6 +90,7 @@ for(i=0;i<8;i++){
 }
 header.append(nav)
 for(i=0;i<5;i++) nav.append(links[i])
+nav.append(button)
 
 // Cookie handling functions from https://www.quirksmode.org/js/cookies.html
 function createCookie(name,value) {
