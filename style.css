@@ -6,7 +6,7 @@ body{
     font-family: "Comic Relief";
     background-color: rgb(197, 166, 219);
     color: rgb(68, 40, 91);
-    
+
     zoom: 250%;
 }
 
@@ -137,6 +137,12 @@ hr{
 #title{
     text-align: left;
     height: 6.3rem;
+}
+
+#color-slider{
+    float: right;
+    width: 10rem;
+    height: 1rem;
 }
 
 #rainbow-toggle{
