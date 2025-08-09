@@ -6,7 +6,7 @@ body{
     font-family: "Comic Relief";
     background-color: rgb(197, 166, 219);
     color: rgb(68, 40, 91);
-
+    
     zoom: 250%;
 }
 
@@ -35,9 +35,9 @@ body{
 }
 
 h1{
-    font-size: 3.8rem;
     text-align: center;
 
+    font-size: 3.8rem;
     color: rgb(95, 60, 136);
     text-shadow: 3px 3px rgb(53, 23, 87);
 }
@@ -45,15 +45,15 @@ h1{
 h2{
     font-size: 2rem;
     text-align: center;
-
     color: rgb(95, 60, 136);
     text-shadow: 2px 2px rgb(53, 23, 87);
 }
 
 h3{
-    font-size: 1.25rem;
     margin-top: 0;
     margin-bottom: .5rem;
+
+    font-size: 1.25rem;
 }
 
 p{
@@ -72,11 +72,11 @@ section{
 }
 
 section, nav{
+    margin-bottom: .7rem;
+
     background-color: rgb(181, 145, 206);
     border: 3px solid rgb(130, 101, 163);
     border-radius: 10px;
-
-    margin-bottom: .7rem;
 }
 
 nav{
@@ -107,7 +107,6 @@ hr{
 .title-header{
     display: inline;
     position: relative;
-
     top: 1rem;
 }
 
@@ -121,8 +120,9 @@ hr{
 }
 
 .project-date{
-    font-size: 0.65rem;
     margin-bottom: 0.5rem;
+
+    font-size: 0.65rem;
 }
 
 .margin-bottom-0{
