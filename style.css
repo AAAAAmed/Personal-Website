@@ -7,31 +7,7 @@ body{
     background-color: rgb(197, 166, 219);
     color: rgb(68, 40, 91);
 
-    zoom: 250%;
-}
-
-@media only screen and (max-width: 3000px){
-    body{
-        zoom: 150%;
-    }
-}
-
-@media only screen and (max-width: 550px){
-    body{
-        zoom: 100%;
-    }
-}
-
-@media only screen and (max-width: 360px){
-    body{
-        zoom: 50%;
-    }
-}
-
-@media only screen and (max-width: 180px){
-    body{
-        zoom: 30%;
-    }
+    zoom: 150%;
 }
 
 h1{
@@ -136,12 +112,12 @@ hr{
 
 #title{
     text-align: left;
-    height: 6.3rem;
+    height: 5.8rem;
 }
 
 #color-slider{
     float: right;
-    width: 10rem;
+    width: 7rem;
     height: 1rem;
 }
 
