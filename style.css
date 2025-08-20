@@ -116,6 +116,17 @@ hr{
     margin-bottom: 0.3rem;
 }
 
+.horizontal-list li{
+    float: left;
+    margin-right: 2rem;
+}
+
+.horizontal-list{
+    padding-left: 1.333rem;
+    margin: 0;
+    overflow: hidden;
+}
+
 #title{
     text-align: left;
     height: 5.8rem;
@@ -141,15 +152,4 @@ hr{
 
 #changelog li{
     margin-bottom: 0.5rem;
-}
-
-#horizontal-list li{
-    float: left;
-    margin-right: 2rem;
-}
-
-#horizontal-list{
-    padding-left: 1.333rem;
-    margin: 0;
-    overflow: hidden;
 }
