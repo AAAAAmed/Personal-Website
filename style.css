@@ -28,6 +28,7 @@ h2{
     text-align: center;
     color: rgb(95, 60, 136);
     text-shadow: 2px 2px rgb(53, 23, 87);
+    margin: 0.5rem 0;
 }
 
 h3{
@@ -140,4 +141,15 @@ hr{
 
 #changelog li{
     margin-bottom: 0.5rem;
+}
+
+#horizontal-list li{
+    float: left;
+    margin-right: 2rem;
+}
+
+#horizontal-list{
+    padding-left: 1.333rem;
+    margin: 0;
+    overflow: hidden;
 }
