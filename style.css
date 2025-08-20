@@ -10,6 +10,11 @@ body{
     zoom: 150%;
 }
 
+::selection{
+    color: white;
+    background-color: rgb(140, 93, 217);
+}
+
 h1{
     text-align: center;
 
