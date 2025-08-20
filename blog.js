@@ -1,7 +1,12 @@
-const blogNav = document.getElementById('blog-nav')
-const blogLinks = Array.from(blogNav.querySelector('.horizontal-list').children)
 const blogSection = document.getElementById('blog')
+const url = new URL(window.location.href)
 
-for (const child of blogLinks){
-    console.log(child.innerHTML)
+const backButton = document.createElement('a')
+backButton.href = './blog.html'
+backButton.textContent = '<-- Exit blog post'
+
+if(url.searchParams.has('blog')){
+    blogSection.textContent = 'you are viewing a blog post!'
+    blogSection.prepend(document.createElement('br'))
+    blogSection.prepend(backButton)
 }
