@@ -1,6 +1,6 @@
 # TODO
-- [ ] Create a footer
-- [ ] Add expiry date for cookies
+- [ ] Create a photos section
+- [x] Add expiry date for cookies
 - [ ] Add content in 'about' page
 - [ ] Make blog .md loader
 - [ ] Write the first blog post

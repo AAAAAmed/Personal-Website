@@ -1,6 +1,11 @@
 // Cookie handling functions from https://www.quirksmode.org/js/cookies.html
 function createCookie(name,value) {
-	document.cookie = name+"="+value+"; path=/";
+    const days = 60
+    var date = new Date()
+    date.setTime(date.getTime()+(days*24*60*60*1000))
+    var expires = "; expires="+date.toGMTString()
+
+	document.cookie = name+"="+value+expires+"; path=/"
 }
 function readCookie(name) {
 	var nameEQ = name + "=";
@@ -52,7 +57,7 @@ div.id = 'title'
 
 const nav = document.createElement('nav')
 const links = []
-for(i=0;i<5;i++){
+for(i=0;i<6;i++){
     switch(i){
         case 0:
             if(window.location.pathname.split('/').pop() == 'index.html'){
@@ -95,6 +100,16 @@ for(i=0;i<5;i++){
             break
 
         case 4:
+            if(window.location.pathname.split('/').pop() == 'photos.html'){
+                links.push(document.createElement('span'))
+            }else{
+                links.push(document.createElement('a'))
+                links[i].href = 'photos.html'
+            }
+            links[i].textContent = 'Photos'
+            break
+
+        case 5:
             if(window.location.pathname.split('/').pop() == 'links.html'){
                 links.push(document.createElement('span'))
             }else{
@@ -130,7 +145,7 @@ for(i=0;i<8;i++){
     div.append(spans[i])
 }
 header.append(nav)
-for(i=0;i<5;i++) nav.append(links[i])
+for(i=0;i<6;i++) nav.append(links[i])
 nav.append(button)
 nav.append(slider)
 
