@@ -90,6 +90,10 @@ hr{
     top: 1rem;
 }
 
+.center{
+    text-align: center;
+}
+
 .fine-print{
     font-size: 0.65rem;
 }
