@@ -1,6 +1,6 @@
 # TODO
 - [x] Make blog .md loader
-- [ ] Create a photos section
+- [x] Create a photos section
 - [ ] Add content in 'about' page
 - [ ] Create a professional portfolio mode/section
 - [ ] Write the first blog post
