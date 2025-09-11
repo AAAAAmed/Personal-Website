@@ -9,7 +9,7 @@ backButton.innerHTML = '<b><-- Exit blog post</b>'
 
 if(url.searchParams.has('blog')){
     // This fetch code is mostly written by Gemini
-    fetch(`./blogs/${url.searchParams.get('blog')}.md`)
+    fetch(`./blogs/${url.searchParams.get('blog')}`)
         .then(response => {
             if (!response.ok){
                 throw new Error(`HTTP ERROR: status = ${response.status}`)

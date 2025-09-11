@@ -161,3 +161,11 @@ hr{
 #changelog li{
     margin-bottom: 0.5rem;
 }
+
+#blog{
+    white-space: pre-wrap;
+}
+
+#blog h2{
+    margin-bottom: -1rem;
+}
