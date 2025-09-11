@@ -166,6 +166,6 @@ hr{
     white-space: pre-wrap;
 }
 
-#blog h2{
+#blog h2, #blog h3, #blog h4{
     margin-bottom: -1rem;
 }
