@@ -129,6 +129,12 @@ hr{
     overflow: hidden;
 }
 
+.button{
+    image-rendering: crisp-edges;
+    height: 66px;
+    margin-top: 0.5rem;
+}
+
 #title{
     text-align: left;
     height: 5.8rem;
