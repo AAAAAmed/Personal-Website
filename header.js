@@ -47,10 +47,10 @@ slider.min = 0
 slider.max = 360
 slider.value = baseHue
 slider.id = 'color-slider'
-slider.onchange = (event) => {
-    baseHue = event.target.value
-    createCookie('baseHue', `${event.target.value}`)
-}
+slider.addEventListener('input', function(){
+    baseHue = this.value
+    createCookie('baseHue', `${this.value}`)
+})
 
 const div = document.createElement('div')
 div.id = 'title'
