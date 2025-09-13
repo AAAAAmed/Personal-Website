@@ -10,3 +10,7 @@ It would make sense for most people to think that if you're making a web blog, y
 
 The problem with using HTML is that it's too werid and ugly in plain text.
 
+The tags aren't very intuitive, and they add big bulky blocks around all of the text. It's also really slow to type it out and edit it if you don't use a code editor.
+
+### So what else do I use?
+Markdown.
