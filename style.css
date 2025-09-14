@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
 body{
     margin-top: 0;
     margin-left: max(1rem, 50% - 300px);
     margin-right: max(1rem, 50% - 300px);
     
-    font-family: "Comic Relief";
+    font-family: 'Comic Relief', sans-serif;
     background-color: rgb(197, 166, 219);
     color: rgb(68, 40, 91);
 
@@ -81,7 +84,21 @@ ul{
 }
 
 hr{
+    border: none;
+    height: 1px;
     color: rgb(130, 101, 163);
+    background-color: rgb(130, 101, 163);
+}
+
+code{
+    padding: 0 3px;
+
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: rgb(181, 145, 206);
+    background-color: rgb(68, 40, 91);
+    border-radius: 5px;
 }
 
 .title-header{
@@ -142,7 +159,7 @@ hr{
 
 #color-slider{
     float: right;
-    width: 7rem;
+    width: 6.5rem;
     height: 1rem;
 }
 
@@ -166,6 +183,11 @@ hr{
     white-space: pre-wrap;
 }
 
-#blog h2, #blog h3, #blog h4{
+#blog h2, #blog h3, #blog h4, #blog li{
     margin-bottom: -1rem;
+}
+
+#blog ul{
+    margin-top: -2.5rem;
+    margin-bottom: -0.5rem;
 }

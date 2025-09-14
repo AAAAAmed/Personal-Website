@@ -3,5 +3,5 @@
 - [x] Create a photos section
 - [x] Add content in 'about' page
 - [ ] Create a professional portfolio mode/section
-- [ ] Write the first blog post
+- [x] Write the first blog post
 - [ ] Create an RSS feed?

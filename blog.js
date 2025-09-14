@@ -5,7 +5,7 @@ const url = new URL(window.location.href)
 
 const backButton = document.createElement('a')
 backButton.href = './blog.html'
-backButton.innerHTML = '<b><-- Exit blog post</b>'
+backButton.innerHTML = '<b>◀—— Exit blog post</b>'
 
 if(url.searchParams.has('blog')){
     // This fetch code is mostly written by Gemini

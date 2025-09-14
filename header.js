@@ -168,13 +168,24 @@ let hue = Number(readCookie('hue'))
 let doRainbow = readCookie('doRainbow') === 'true'
 function rainbow(deltaTime){
     const speed = 0.2
+    const images = document.getElementsByTagName('img')
+    const imageArray = Array.from(images)
+    
     if(doRainbow){
-        document.documentElement.style.filter = "hue-rotate("+hue+"deg)"
         hue += speed*deltaTime
+        document.documentElement.style.filter = `hue-rotate(${hue}deg)`
+
+        imageArray.forEach(image => {
+            image.style.filter = `hue-rotate(${-hue}deg)`
+        })
 
         createCookie('hue', `${hue}`)
     }else{
-        document.documentElement.style.filter = "hue-rotate("+baseHue+"deg)"
+        document.documentElement.style.filter = `hue-rotate(${baseHue}deg)`
+
+        imageArray.forEach(image => {
+            image.style.filter = `hue-rotate(${-baseHue}deg)`
+        })
     }
 }
 
