@@ -60,7 +60,7 @@ const links = []
 for(i=0;i<6;i++){
     switch(i){
         case 0:
-            if(window.location.pathname.split('/').pop() == 'index.html'){
+            if(window.location.pathname.split('/').pop() == ''){
                 links.push(document.createElement('span'))
             }else{
                 links.push(document.createElement('a'))
@@ -70,7 +70,7 @@ for(i=0;i<6;i++){
             break
 
         case 1:
-            if(window.location.pathname.split('/').pop() == 'about.html'){
+            if(window.location.pathname.split('/').pop() == 'about'){
                 links.push(document.createElement('span'))
             }else{
                 links.push(document.createElement('a'))
@@ -80,7 +80,7 @@ for(i=0;i<6;i++){
             break
 
         case 2:
-            if(window.location.pathname.split('/').pop() == 'blog.html'){
+            if(window.location.pathname.split('/').pop() == 'blog'){
                 links.push(document.createElement('span'))
             }else{
                 links.push(document.createElement('a'))
@@ -90,7 +90,7 @@ for(i=0;i<6;i++){
             break
         
         case 3:
-            if(window.location.pathname.split('/').pop() == 'projects.html'){
+            if(window.location.pathname.split('/').pop() == 'projects'){
                 links.push(document.createElement('span'))
             }else{
                 links.push(document.createElement('a'))
@@ -100,7 +100,7 @@ for(i=0;i<6;i++){
             break
 
         case 4:
-            if(window.location.pathname.split('/').pop() == 'photos.html'){
+            if(window.location.pathname.split('/').pop() == 'photos'){
                 links.push(document.createElement('span'))
             }else{
                 links.push(document.createElement('a'))
@@ -110,7 +110,7 @@ for(i=0;i<6;i++){
             break
 
         case 5:
-            if(window.location.pathname.split('/').pop() == 'links.html'){
+            if(window.location.pathname.split('/').pop() == 'links'){
                 links.push(document.createElement('span'))
             }else{
                 links.push(document.createElement('a'))
